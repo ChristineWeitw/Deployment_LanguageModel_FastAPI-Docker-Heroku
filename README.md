@@ -9,6 +9,15 @@ Deploy an Language Detection ML model with FastAPI, Docker, and Heroku
   'main.py' - for fastapi endpoints.
   
   'model.py' - to call the pipeline models inside pkl file.
-* Dockerize the app
+* Dockerize the app: 
+
+  '.dockerignore' - to ignore certain files
+
+  'Dockerfile' - build to doucker image
+    * reference: https://fastapi.tiangolo.com/deployment/docker/
+    * Run the command in terminal to build the image:
+        "docker build -t <name> ."
+    * To test and run the image to see if it works:
+        "docker run -p 80:80 <name>"
 * Deployment to Heroku
 * Final Testing
